@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="colestyles2.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="colescript.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<body>
+
+	<div class="column left">
+		<div class="contentLeft">
+			<h1>About Me:</h1>	
+			<img id="mePic" src="https://media.licdn.com/dms/image/C4D03AQFVEVvylIz0_A/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=cy6eaTbVUoF_XAdOizKNUd4ZEVqCA4Og6fQ5O6jxGMY" class="headShot">		
+		</div>
+	</div>
+
+	<div class="column right" onscroll="colorFull()">
+		<div class="contentRight">
+			<h6 class="heading">var about = (name) => { return INFO };</h6>
+			<h1 class="heading">console.log( about(Cole)&nbsp;);</h1>
+			<h2 class="threeLines" onclick="openNav()">☰</h2>
+			<h3>BIO</h3>
+			<div class="paragraphText smallTab">
+				<b>1999: </b>Born <br>
+					<div class="tabbedStuff">
+						<b>Place: </b>Kansas City, MO<br><br>
+					</div>
+				<b>1999-2014: </b>Getting Taller <br>
+					<div class="tabbedStuff">
+						<b>Place: </b>Olathe -> Overland Park, KS<br><br>
+					</div>
+				<b>2014-2018: </b>High School <br>
+					<div class="tabbedStuff">
+						<b>Place: </b>Overland Park, KS<br>
+					</div>
+					<div class="tabbedStuff">
+						<b>Description: </b>Swam, ran cross country, ran track, developed strong interests in both coding & investing, learned a lot, enjoyed life.<br><br>
+					</div>
+				<b>2018-Present: </b>College & Career Development<br>
+					<div class="tabbedStuff">
+						<b>Place: </b>Manhattan/Overland Park, KS<br>
+					</div>
+					<div class="tabbedStuff">
+						<b>Description: </b>Freshman at Kansas State University studying computer science. Diving deeper and deeper into the field of technology.  Striving to learn more and improve myself everyday.<br><br>
+					</div>
+				<b>April, 2019: </b>Making This Website <br>
+					<div class="tabbedStuff">
+						<b>Place: </b>Manhattan/Overland Park, KS<br>
+					</div>
+					<div class="tabbedStuff">
+						<b>Description: </b>Had a fun time making this website (bootstrap not included).<br><br>
+					</div>
+			</div>
+			<h3>DEVELOPMENT WORK</h3>
+			<div class="paragraphText smallTab">For the most part, most of my coding knowledge has been gained through self-instruction and hours stubbornly laboring over how to solve Project Euler questions without looking up the answers online.  Despite my inneficient and rather unfruitful initial efforts, I kept throwing myself into new challenges, refusing to quit when things got hard, (yes, even if this meant combing the web for hours trying to find a solution to a problem that at some point I began to believe not even Stack Overflow had the answer to) and continuing to build my programming acumen every step along the way.  And, while I have began to take greater leaps in my learning, the sheer amount of knowledge and skills far beyond the scope of my current tech stack continues to humble me and motivate me even more to take on new challenges and pursue new pathways of learning/development.<br>
+
+			<br>Pertaining to my current language stack, I am well versed in GoLang, Python, Java, HTML, CSS, and JS. To give some background, I have used GoLang to build a backend CRUD API for Google Firebase as well as build a webcrawler with a jquery library that allowed me to comb through Trip Advisor's website and index each restaurant in the United States within a personal database according to city in a timely manner (I did not write the bulk write API for that project though as I was strictly on the logic end of getting and processing the data from Trip Advisor).  I have also utilized GoLang and Python to do numerous data structure problems on websites such as LeetCode and ProjectEuler. Lastly, Java is the language I use for class, so I have become accustomed to working with it and the object oriented side of programming.<br>
+
+			<br>Moving on to the web side of things, I have found the best way to learn new concepts is to just build something utilizing whatever thing you are trying to learn (such was the case with even this website).  Iterating through concepts and polling friends on designs has aided tremendously in my learning of HTML, CSS, and JS.  Some of the tasks I have completed with these languages: building various widgets such as a magic 8-ball, dice-rolling, tic-tac-toe game, and other JS DOM-manipulating mini-projects; working through free code education software at Codecademy and Free Code Camp; attempting to recreate existing websites; coding this website from scratch.  I will also note that I have dabbled in jQuery and Bootstrap and am currently going through a Scrimba interactive lecture series on ReactJS.<br>
+			</div>
+			
+			<h3>THE FUTURE</h3>
+			<div class="paragraphText smallTab bottomDiv">The further development of my current stack goes without saying, but I would also like to expand upon my knowledge with the acquisition of these specific future skills: React, ReactNative (for mobile applications), MySQL and relational databases (databases are becoming more and more popular, but I currently only have had personal practice with the non-relational likes of Google Firestore and MongoDB), PHP (backend language still popular in industry), and C++ (for optimizing and scaling large-scale backend projects).  If you are in industry and viewing this page, feel free to <a href="contact.html" class="intextLink">email</a> me with feedback and/or suggestions.  Also, if you are just learning or starting out in coding/Computer Science, I know it can be overwhelming; feel free to <a href="contact.html" class="intextLink">contact</a> me as well and I'll try to answer any questions you may have as well as give any advice I may have regarding how to go about the learning process.</div>
+		</div>
+	</div>
+		
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">HOME</a>
+	  <a href="#">ABOUT</a>
+	  <a href="portfolio.html">PORTFOLIO</a>
+	  <a href="resume.html">RESUME</a>
+	  <a href="contact.html" class="lastInBar">CONTACT</a>
+	</div>
+</body>
+</html>

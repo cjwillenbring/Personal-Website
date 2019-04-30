@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="colestyles3.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="colescript.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<script>
+		//script for toggling size of expandable divs
+	    $(document).ready(function() {
+	        $('.expanddiv').click(function(e){
+            	e.stopPropagation();
+	        	var str = $(this).html();
+	        	if (str != "+") {
+	        		$(this).parent('.project').css("height","100px");
+	        		$(this).parent('.project').css("padding-bottom","0px");
+	        		$(this).parent('.codingStuff').css("width","0");
+	        		$(this).siblings('.codingStuff').removeClass("show");
+	        		$(this).html("&plus;");
+	        	} else {
+	        		$(this).parent('.project').css("height","auto");
+	        		$(this).parent('.project').css("padding-bottom","20px");
+	        		$(this).siblings('.codingStuff').css("width","100%");
+	        		$(this).siblings('.codingStuff').addClass("show");
+	        		$(this).html("&times;");
+	        	}
+	        });
+	    });
+	</script>
+	<div class="portfolioHome imageSelector" id="test">
+		<h2 class="threeLines" onclick="openNav()">☰</h2>
+		<div class="centerText">
+			<span class="underConstruction">MY PORTFOLIO: UNDER CONSTRUCTION</span>
+		</div>
+	</div>
+	<div class="bigContainer">
+		<div class="separateContainer webContainer">
+			<h2 class="sectionTitle" style="text-align: center;">WEB PROJECTS</h2>
+			<div class="projectGrid gridWeb">
+				<div class="column">
+					<div class="projectLeft project goLang">
+						<span class="titleText">THIS WEBSITE</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">I made this website entirely from scratch with a little help from google and Stack Overflow when niche problems arose.  In hindsight, using outisde tools such as bootstrap would've been a big help, but it was a pleasant challenge to take on this project with the limited toolset as it forced me to learn my tools better and further develop my web stack.  I am always updating this webpage, but I have finished much of the heavylifting already.  A lot of what I do now consists of small tweaks and minor UI/Quality of Life improvements.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+					<div class="projectLeft project ecmaScript">
+						<span class="titleText">WIDGETS</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Learning all the caveats of javascript, jQuery, CSS, and HTML seems almost impossible to manage at first, so I started out building simple webpages and widgets using different syntax and skills each time until I started to build habits in my coding.  Despite my habits, I still enjoy working on these mini-projects as they provide a great ROI when it comes to satisfaction in respect to the time put into working on them.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="projectRight project ecmaScript">
+						<span class="titleText">FIRST ITERATION</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">I thought it would be nice to include the first iteration of my website to get a grasp on the site before and after I made the quite sizable renovation.  Originally, the site was simply a harsh purple background with some text and a playable tic-tac-toe board that didn't even include the javascript logic to check for a winner.  Nevertheless, it was still an interesting task given as homework for an intro level computing class.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+					<div class="projectRight project goLang">
+						<span class="titleText">Coming Soon...</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img2 imageSelector"></div>
+		<div class="separateContainer goContainer">
+			<h2 class="sectionTitle" style="text-align: center;">GOLANG</h2>
+			<div class="projectGrid gridGo">
+				<div class="column">
+					<div class="projectLeft project goLang">
+						<span class="titleText">Coming Soon...</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+					<div class="projectLeft project ecmaScript">
+						<span class="titleText">Coming Soon...</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="projectRight project ecmaScript">
+						<span class="titleText">Coming Soon...</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+					<div class="projectRight project goLang">
+						<span class="titleText">Coming Soon...</span>
+						<div class="expanddiv">+</div>
+						<div class="codingStuff">
+							<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+							<a href="#" class="projLinks">See The Code Here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img3 imageSelector"></div>
+		<div class="separateContainer pythonContainer">
+			<h2 class="sectionTitle" style="text-align: center;">PYTHON</h2>
+			<div class="projectGrid gridPython">
+					<div class="column">
+						<div class="projectLeft project goLang">
+							<span class="titleText">Coming Soon...</span>
+							<div class="expanddiv">+</div>
+							<div class="codingStuff">
+								<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+								<a href="#" class="projLinks">See The Code Here</a>
+							</div>
+						</div>
+						<div class="projectLeft project ecmaScript">
+							<span class="titleText">Coming Soon...</span>
+							<div class="expanddiv">+</div>
+							<div class="codingStuff">
+								<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+								<a href="#" class="projLinks">See The Code Here</a>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="projectRight project ecmaScript">
+							<span class="titleText">Coming Soon...</span>
+							<div class="expanddiv">+</div>
+							<div class="codingStuff">
+								<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+								<a href="#" class="projLinks">See The Code Here</a>
+							</div>
+						</div>
+						<div class="projectRight project goLang">
+							<span class="titleText">Coming Soon...</span>
+							<div class="expanddiv">+</div>
+							<div class="codingStuff">
+								<p class="explainingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed facilisis ligula, id imperdiet elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus libero justo, mattis eget volutpat at, eleifend ac mi. Nam placerat eget ante sed auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor sem ac enim egestas consectetur. Sed scelerisque magna et eros tincidunt efficitur. Nulla fermentum a ante at aliquet. Donec felis metus, faucibus at eros quis, consequat tincidunt nisl.</p>
+								<a href="#" class="projLinks">See The Code Here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div>
+		<div class="img4 imageSelector"></div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">HOME</a>
+	  <a href="about.html">ABOUT</a>
+	  <a href="#">PORTFOLIO</a>
+	  <a href="resume.html">RESUME</a>
+	  <a href="contact.html" class="lastInBar">CONTACT</a>
+	</div>
+	<div id="loading">
+		<div class="lds-grid" id="loading-image"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	</div>
+	<script type="text/javascript">
+		/*
+		$('.imageSelector').load(function(){
+		  $('.hide').removeClass("hide");
+		    $('.background').css("animation-name","fade-in");
+		    setTimeout(function() {
+		    	$('#loading').hide();
+		    },2000);
+		}).each(function(){
+		  if(this.complete) {
+		    $(this).trigger('load');
+		  }
+		});
+		var src = $('#test').css('background-image');
+		var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+
+		var img = new Image();
+		img.onload = function() {
+		    
+		}
+		img.src = url;
+		if (img.complete) img.onload(); */
+		$(document).ready(function() {
+			setTimeout(function() {
+				$("#loading").fadeOut();
+			},5000);
+		});
+	</script>
+</body>
+</html>

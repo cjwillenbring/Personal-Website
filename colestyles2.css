@@ -1,0 +1,171 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.column {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+.left {
+	width: 35%;
+	left: 0;
+	background-color: black;
+	color: white;
+	animation-name: example1;
+	animation-duration: 4s;
+}
+
+@keyframes example1 {
+  from {background-color: white;}
+  to {background-color: black;}
+}
+
+.right {
+	width: 65%;
+	background-color: white;
+	color: black;
+	right: 0;
+	overflow-y: scroll; /*success!*/
+	-webkit-overflow-scrolling: touch; /*success!*/
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
+.contentLeft {
+	margin: 10px;
+}
+
+.contentRight {
+	margin: 10px;
+	margin-right: 1em;
+}
+
+.tabbedStuff {
+	margin-left: 3em;
+}
+
+.smallTab {
+	margin-left: 1em;
+}
+
+.bottomDiv {
+	margin-bottom: 35px;
+}
+
+.intextLink {
+	color: blue;
+}
+
+.intextLink:hover {
+	color: grey;
+	transition: .3s;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  opacity: .9;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  letter-spacing: 3px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  opacity: .3;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.lastInBar {
+	margin-bottom: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.threeLines {
+	margin: 5px;
+	position: fixed;
+	right: 25px;
+	top: 10px;
+	cursor: pointer;
+	opacity: .9;
+}
+
+.threeLines:hover {
+	opacity: .3;
+}
+
+.headShot {
+	display: block;
+	margin: auto;
+	position: relative;
+	top: 80px;
+	filter: grayscale(100%);
+	border-radius: 50%;
+	transition: 2s;
+}
+
+@media screen and (max-width: 640px) {
+	.left {
+		display: none;
+	}
+	.right {
+		width: 100%;
+	}
+}
+
+@media screen and (max-height: 400px) {
+	.headShot {
+		top: 0;
+	}
+}
+
+@media screen and (max-height: 300px) {
+	.left {
+		display: none;
+	}
+	.right {
+		width: 100%;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="colestyles5.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="colescript.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="background hide" id="test">
+		<h2 class="threeLines" onclick="openNav()">☰</h2>
+		<form class="" id="userForm" action="http://formspree.io/cole@willenbrings.com" method="post">
+			<span style="font-size: 20px;">CONTACT FORM</span><br>
+			<div>
+				NAME <input type="text" name="name" required>
+			</div>
+			<div>
+				EMAIL <input type="email" name="_replyto" required>
+			</div>
+			<div>
+				<br> MESSAGE <br><br> <textarea name="message" form="userForm" style="font-family: arial" required></textarea>
+			</div>
+			<input type="submit" value="SEND" style="width: 200px; cursor: pointer;">
+		</form>
+		<!--
+		<div class="centerText hide"><span class="underConstruction">PAGE UNDER CONSTRUCTION</span><br><span class="backHome"><a href="index.html">BACK TO HOMEPAGE</a></span></div> -->
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">HOME</a>
+	  <a href="about.html">ABOUT</a>
+	  <a href="portfolio.html">PORTFOLIO</a>
+	  <a href="resume.html">RESUME</a>
+	  <a href="#" class="lastInBar">CONTACT</a>
+	</div>
+
+	<div id="loading">
+		<div class="lds-grid" id="loading-image"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	</div>
+	<script type="text/javascript">
+		var src = $('#test').css('background-image');
+		var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+
+		var img = new Image();
+		img.onload = function() {
+		    $('.hide').removeClass("hide");
+		    $('.background').css("animation-name","fade-in");
+		    setTimeout(function() {
+		    	$('#loading').fadeOut();
+		    },2000);
+		}
+		img.src = url;
+		if (img.complete) img.onload();
+	</script>
+</body>
+</html>
